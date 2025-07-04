@@ -31,6 +31,18 @@ extension DeveloperToolsSupport.ColorResource {
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension DeveloperToolsSupport.ImageResource {
 
+    /// The "CFConfezione" asset catalog image resource.
+    static let cfConfezione = DeveloperToolsSupport.ImageResource(name: "CFConfezione", bundle: resourceBundle)
+
+    /// The "CFConsegna" asset catalog image resource.
+    static let cfConsegna = DeveloperToolsSupport.ImageResource(name: "CFConsegna", bundle: resourceBundle)
+
+    /// The "CFContattaci" asset catalog image resource.
+    static let cfContattaci = DeveloperToolsSupport.ImageResource(name: "CFContattaci", bundle: resourceBundle)
+
+    /// The "CFScegliere" asset catalog image resource.
+    static let cfScegliere = DeveloperToolsSupport.ImageResource(name: "CFScegliere", bundle: resourceBundle)
+
     /// The "home1" asset catalog image resource.
     static let home1 = DeveloperToolsSupport.ImageResource(name: "home1", bundle: resourceBundle)
 
@@ -79,6 +91,42 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 @available(macCatalyst, unavailable)
 extension AppKit.NSImage {
 
+    /// The "CFConfezione" asset catalog image.
+    static var cfConfezione: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .cfConfezione)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFConsegna" asset catalog image.
+    static var cfConsegna: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .cfConsegna)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFContattaci" asset catalog image.
+    static var cfContattaci: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .cfContattaci)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFScegliere" asset catalog image.
+    static var cfScegliere: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .cfScegliere)
+#else
+        .init()
+#endif
+    }
+
     /// The "home1" asset catalog image.
     static var home1: AppKit.NSImage {
 #if !targetEnvironment(macCatalyst)
@@ -113,6 +161,42 @@ extension AppKit.NSImage {
 @available(iOS 17.0, tvOS 17.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
+
+    /// The "CFConfezione" asset catalog image.
+    static var cfConfezione: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .cfConfezione)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFConsegna" asset catalog image.
+    static var cfConsegna: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .cfConsegna)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFContattaci" asset catalog image.
+    static var cfContattaci: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .cfContattaci)
+#else
+        .init()
+#endif
+    }
+
+    /// The "CFScegliere" asset catalog image.
+    static var cfScegliere: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .cfScegliere)
+#else
+        .init()
+#endif
+    }
 
     /// The "home1" asset catalog image.
     static var home1: UIKit.UIImage {

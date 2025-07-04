@@ -10,6 +10,46 @@
 			<key>catalogPath</key>
 			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameCFConfezione</string>
+			<key>relativePath</key>
+			<string>./CFConfezione.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cfConfezione</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCFConsegna</string>
+			<key>relativePath</key>
+			<string>./CFConsegna.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cfConsegna</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCFContattaci</string>
+			<key>relativePath</key>
+			<string>./CFContattaci.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cfContattaci</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameCFScegliere</string>
+			<key>relativePath</key>
+			<string>./CFScegliere.imageset</string>
+			<key>swiftSymbol</key>
+			<string>cfScegliere</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNameHome1</string>
 			<key>relativePath</key>
 			<string>./home1.imageset</string>

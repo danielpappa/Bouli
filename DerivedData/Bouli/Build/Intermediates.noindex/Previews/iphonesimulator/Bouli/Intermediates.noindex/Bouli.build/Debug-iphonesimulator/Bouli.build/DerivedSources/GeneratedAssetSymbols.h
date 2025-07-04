@@ -6,6 +6,18 @@
 #define AC_SWIFT_PRIVATE
 #endif
 
+/// The "CFConfezione" asset catalog image resource.
+static NSString * const ACImageNameCFConfezione AC_SWIFT_PRIVATE = @"CFConfezione";
+
+/// The "CFConsegna" asset catalog image resource.
+static NSString * const ACImageNameCFConsegna AC_SWIFT_PRIVATE = @"CFConsegna";
+
+/// The "CFContattaci" asset catalog image resource.
+static NSString * const ACImageNameCFContattaci AC_SWIFT_PRIVATE = @"CFContattaci";
+
+/// The "CFScegliere" asset catalog image resource.
+static NSString * const ACImageNameCFScegliere AC_SWIFT_PRIVATE = @"CFScegliere";
+
 /// The "home1" asset catalog image resource.
 static NSString * const ACImageNameHome1 AC_SWIFT_PRIVATE = @"home1";
 
