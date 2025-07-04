@@ -5,7 +5,38 @@
 	<key>colors</key>
 	<array/>
 	<key>images</key>
-	<array/>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHome1</string>
+			<key>relativePath</key>
+			<string>./home1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>home1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHome2</string>
+			<key>relativePath</key>
+			<string>./home2.imageset</string>
+			<key>swiftSymbol</key>
+			<string>home2</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameHome3</string>
+			<key>relativePath</key>
+			<string>./home3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>home3</string>
+		</dict>
+	</array>
 	<key>symbols</key>
 	<array/>
 </dict>

@@ -31,6 +31,15 @@ extension DeveloperToolsSupport.ColorResource {
 @available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 extension DeveloperToolsSupport.ImageResource {
 
+    /// The "home1" asset catalog image resource.
+    static let home1 = DeveloperToolsSupport.ImageResource(name: "home1", bundle: resourceBundle)
+
+    /// The "home2" asset catalog image resource.
+    static let home2 = DeveloperToolsSupport.ImageResource(name: "home2", bundle: resourceBundle)
+
+    /// The "home3" asset catalog image resource.
+    static let home3 = DeveloperToolsSupport.ImageResource(name: "home3", bundle: resourceBundle)
+
 }
 
 // MARK: - Color Symbol Extensions -
@@ -70,6 +79,33 @@ extension SwiftUI.ShapeStyle where Self == SwiftUI.Color {
 @available(macCatalyst, unavailable)
 extension AppKit.NSImage {
 
+    /// The "home1" asset catalog image.
+    static var home1: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .home1)
+#else
+        .init()
+#endif
+    }
+
+    /// The "home2" asset catalog image.
+    static var home2: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .home2)
+#else
+        .init()
+#endif
+    }
+
+    /// The "home3" asset catalog image.
+    static var home3: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .home3)
+#else
+        .init()
+#endif
+    }
+
 }
 #endif
 
@@ -77,6 +113,33 @@ extension AppKit.NSImage {
 @available(iOS 17.0, tvOS 17.0, *)
 @available(watchOS, unavailable)
 extension UIKit.UIImage {
+
+    /// The "home1" asset catalog image.
+    static var home1: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .home1)
+#else
+        .init()
+#endif
+    }
+
+    /// The "home2" asset catalog image.
+    static var home2: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .home2)
+#else
+        .init()
+#endif
+    }
+
+    /// The "home3" asset catalog image.
+    static var home3: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .home3)
+#else
+        .init()
+#endif
+    }
 
 }
 #endif
@@ -178,6 +241,26 @@ extension DeveloperToolsSupport.ImageResource {
     }
 
 }
+
+#if canImport(AppKit)
+@available(macOS 14.0, *)
+@available(macCatalyst, unavailable)
+extension AppKit.NSImage {
+
+    private convenience init?(thinnableResource: DeveloperToolsSupport.ImageResource?) {
+#if !targetEnvironment(macCatalyst)
+        if let resource = thinnableResource {
+            self.init(resource: resource)
+        } else {
+            return nil
+        }
+#else
+        return nil
+#endif
+    }
+
+}
+#endif
 
 #if canImport(UIKit)
 @available(iOS 17.0, tvOS 17.0, *)

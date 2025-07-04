@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var sideMenuIsShowing: Bool = false
+    @State private var selectedMenuSection: MenuSection = .home
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {                
+            Group {
+                switch selectedMenuSection {
+                case .home:
+                    HomeView()
+                case .menu:
+                    MenuView()
+                case .orders:
+                    OrdersView()
+                case .profile:
+                    ProfileView()
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        withAnimation {
+                            sideMenuIsShowing.toggle()
+                        }
+                    }) {
+                        Image(systemName: "line.horizontal.3")
+                            .foregroundColor(.white)
+                    }
+                }
+            }
         }
-        .padding()
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarBackground(Color.white, for: .navigationBar)
+        .fullScreenCover(isPresented: $sideMenuIsShowing) {
+            SideMenuView(isShowing: $sideMenuIsShowing, selectedSection: $selectedMenuSection)
+        }
     }
 }
 

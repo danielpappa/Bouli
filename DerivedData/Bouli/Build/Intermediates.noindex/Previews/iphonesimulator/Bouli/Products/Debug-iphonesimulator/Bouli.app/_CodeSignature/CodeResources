@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		xG3A3SALGNagmlU8u/o4xA8CBlo=
+		</data>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<data>
 		8Nt2OoNeORCz6Kk+FwQvMxHkQiA=
@@ -131,6 +135,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			agcKda+g4O6AGMyx/2TfoQj1G0gHF7hHvE3ZCJ+8o6U=
+			</data>
+		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>

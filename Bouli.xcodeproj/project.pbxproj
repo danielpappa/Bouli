@@ -14,6 +14,12 @@
 		7D396BEA2E17A52100BC53E6 /* BouliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D396BE92E17A52100BC53E6 /* BouliTests.swift */; };
 		7D396BF42E17A52200BC53E6 /* BouliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D396BF32E17A52200BC53E6 /* BouliUITests.swift */; };
 		7D396BF62E17A52200BC53E6 /* BouliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D396BF52E17A52200BC53E6 /* BouliUITestsLaunchTests.swift */; };
+		7DB3EFD02E17B4BD003D54BF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFCF2E17B4BD003D54BF /* HomeView.swift */; };
+		7DB3EFD22E17B4EE003D54BF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFD12E17B4EE003D54BF /* MenuView.swift */; };
+		7DB3EFD42E17B4FF003D54BF /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFD32E17B4FF003D54BF /* OrdersView.swift */; };
+		7DB3EFD62E17B510003D54BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFD52E17B510003D54BF /* ProfileView.swift */; };
+		7DB3EFD82E17C8E0003D54BF /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFD72E17C8E0003D54BF /* MenuSections.swift */; };
+		7DB3EFDA2E17C909003D54BF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3EFD92E17C909003D54BF /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		7D396BEF2E17A52200BC53E6 /* BouliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D396BF32E17A52200BC53E6 /* BouliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouliUITests.swift; sourceTree = "<group>"; };
 		7D396BF52E17A52200BC53E6 /* BouliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DB3EFCF2E17B4BD003D54BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7DB3EFD12E17B4EE003D54BF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7DB3EFD32E17B4FF003D54BF /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		7DB3EFD52E17B510003D54BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7DB3EFD72E17C8E0003D54BF /* MenuSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSections.swift; sourceTree = "<group>"; };
+		7DB3EFD92E17C909003D54BF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				7D396BD82E17A51D00BC53E6 /* BouliApp.swift */,
 				7D396BDA2E17A51D00BC53E6 /* ContentView.swift */,
+				7DB3EFD72E17C8E0003D54BF /* MenuSections.swift */,
+				7DB3EFD92E17C909003D54BF /* SideMenuView.swift */,
+				7DB3EFD52E17B510003D54BF /* ProfileView.swift */,
+				7DB3EFD32E17B4FF003D54BF /* OrdersView.swift */,
+				7DB3EFD12E17B4EE003D54BF /* MenuView.swift */,
+				7DB3EFCF2E17B4BD003D54BF /* HomeView.swift */,
 				7D396BDC2E17A52100BC53E6 /* Assets.xcassets */,
 				7D396BDE2E17A52100BC53E6 /* Preview Content */,
 			);
@@ -257,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB3EFD42E17B4FF003D54BF /* OrdersView.swift in Sources */,
+				7DB3EFD02E17B4BD003D54BF /* HomeView.swift in Sources */,
+				7DB3EFD22E17B4EE003D54BF /* MenuView.swift in Sources */,
+				7DB3EFDA2E17C909003D54BF /* SideMenuView.swift in Sources */,
 				7D396BDB2E17A51D00BC53E6 /* ContentView.swift in Sources */,
+				7DB3EFD62E17B510003D54BF /* ProfileView.swift in Sources */,
 				7D396BD92E17A51D00BC53E6 /* BouliApp.swift in Sources */,
+				7DB3EFD82E17C8E0003D54BF /* MenuSections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

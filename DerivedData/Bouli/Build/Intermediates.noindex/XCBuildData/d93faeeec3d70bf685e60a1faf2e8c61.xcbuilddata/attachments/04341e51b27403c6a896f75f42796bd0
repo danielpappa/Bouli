@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests-master.dia",
+    "emit-module-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests-master.swiftdeps"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/BouliUITests/BouliUITests.swift" : {
+    "const-values" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.swiftconstvalues",
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.dia",
+    "index-unit-output-path" : "/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.o",
+    "llvm-bc" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.bc",
+    "object" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.o",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests.swiftdeps",
+    "swiftmodule" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITests~partial.swiftmodule"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/BouliUITests/BouliUITestsLaunchTests.swift" : {
+    "const-values" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.swiftconstvalues",
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.dia",
+    "index-unit-output-path" : "/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.o",
+    "llvm-bc" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.bc",
+    "object" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.o",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests.swiftdeps",
+    "swiftmodule" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/BouliUITests.build/Objects-normal/x86_64/BouliUITestsLaunchTests~partial.swiftmodule"
+  }
+}

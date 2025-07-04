@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'BouliUITests' in project 'Bouli'
+➜ Explicit dependency on target 'Bouli' in project 'Bouli'
+Target 'BouliTests' in project 'Bouli'
+➜ Explicit dependency on target 'Bouli' in project 'Bouli'
+Target 'Bouli' in project 'Bouli' (no dependencies)
