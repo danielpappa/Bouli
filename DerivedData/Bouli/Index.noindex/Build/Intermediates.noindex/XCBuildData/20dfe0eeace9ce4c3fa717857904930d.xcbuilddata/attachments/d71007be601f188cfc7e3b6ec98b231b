@@ -1,0 +1,15 @@
+{
+  "" : {
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/BouliUITests.build/Objects-normal/arm64/BouliUITests-master.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/BouliUITests.build/Objects-normal/arm64/BouliUITests-master.dia",
+    "emit-module-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/BouliUITests.build/Objects-normal/arm64/BouliUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/BouliUITests.build/Objects-normal/arm64/BouliUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/BouliUITests.build/Objects-normal/arm64/BouliUITests-master.swiftdeps"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/BouliUITests/BouliUITests.swift" : {
+
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/BouliUITests/BouliUITestsLaunchTests.swift" : {
+
+  }
+}

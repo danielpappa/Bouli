@@ -1,0 +1,18 @@
+{
+  "" : {
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/Objects-normal/arm64/Bouli-master.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/Objects-normal/arm64/Bouli-master.dia",
+    "emit-module-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/Objects-normal/arm64/Bouli-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/Objects-normal/arm64/Bouli-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/Objects-normal/arm64/Bouli-master.swiftdeps"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/BouliApp.swift" : {
+
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift" : {
+
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphoneos/Bouli.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  }
+}

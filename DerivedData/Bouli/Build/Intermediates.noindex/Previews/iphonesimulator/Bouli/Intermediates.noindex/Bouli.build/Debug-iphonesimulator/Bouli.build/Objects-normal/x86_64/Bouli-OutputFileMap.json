@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/Bouli-master.dia",
+    "emit-module-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/Bouli-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/Bouli-master-emit-module.dia",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/Bouli-master.swiftdeps"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/BouliApp.swift" : {
+    "const-values" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.swiftconstvalues",
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.dia",
+    "index-unit-output-path" : "/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.o",
+    "llvm-bc" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.bc",
+    "object" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.o",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp.swiftdeps",
+    "swiftmodule" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/BouliApp~partial.swiftmodule"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift" : {
+    "const-values" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
