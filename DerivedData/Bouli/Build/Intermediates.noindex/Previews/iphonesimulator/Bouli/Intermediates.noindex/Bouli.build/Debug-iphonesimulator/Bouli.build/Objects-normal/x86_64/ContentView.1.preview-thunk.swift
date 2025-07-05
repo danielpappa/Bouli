@@ -31,7 +31,7 @@ extension ContentView {
                             sideMenuIsShowing.toggle()
                         }
                     }) {
-                        Image(systemName: __designTimeString("#5350.[1].[2].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value", fallback: "line.horizontal.3"))
+                        Image(systemName: __designTimeString("#2654.[1].[2].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value", fallback: "line.horizontal.3"))
                             .foregroundColor(.white)
                     }
                 }

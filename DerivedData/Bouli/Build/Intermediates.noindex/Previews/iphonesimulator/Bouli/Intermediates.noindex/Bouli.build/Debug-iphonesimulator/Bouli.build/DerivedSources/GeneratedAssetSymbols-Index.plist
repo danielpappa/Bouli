@@ -76,6 +76,16 @@
 			<key>swiftSymbol</key>
 			<string>home3</string>
 		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePickup</string>
+			<key>relativePath</key>
+			<string>./pickup.imageset</string>
+			<key>swiftSymbol</key>
+			<string>pickup</string>
+		</dict>
 	</array>
 	<key>symbols</key>
 	<array/>

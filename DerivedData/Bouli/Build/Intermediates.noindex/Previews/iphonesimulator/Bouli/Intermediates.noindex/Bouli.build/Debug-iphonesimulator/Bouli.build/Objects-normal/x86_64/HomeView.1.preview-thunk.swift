@@ -8,9 +8,74 @@ import struct SwiftUI.EmptyView
 import protocol SwiftUI.View
 import SwiftUI
 
+extension OverviewCarouselView {
+    @_dynamicReplacement(for: body) private var __preview__body: some View {
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 235)
+        GeometryReader { geometry in
+            ZStack {
+                TabView() {
+                    ForEach(sections) { section in
+                        OverviewView(section: section)
+                            .tag(section.id)
+                    }
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+            .frame(height: geometry.size.height)
+        }
+        .frame(height: __designTimeInteger("#2694.[7].[2].property.[0].[0].modifier[0].arg[0].value", fallback: 250))
+    
+#sourceLocation()
+    }
+}
+
+extension OverviewView {
+    @_dynamicReplacement(for: body) private var __preview__body: some View {
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 186)
+        GeometryReader { geometry in
+            HStack(alignment: .top) {
+                Image(section.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width * __designTimeFloat("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].modifier[2].arg[0].value.[0]", fallback: 0.45))
+                    .clipped()
+                    .cornerRadius(__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].modifier[4].arg[0].value", fallback: 20))
+                VStack(alignment: .leading) {
+                    Text(section.title1)
+                        .font(.callout)
+                        .foregroundColor(Color(red: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[1].arg[0].value.arg[2].value.[1]", fallback: 255)))
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[3].arg[1].value", fallback: 5))
+                    Text(section.description1)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.secondary)
+                        .frame(alignment: .top)
+                    Text(section.title2)
+                        .font(.subheadline)
+                        .foregroundColor(Color(red: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[1].arg[0].value.arg[2].value.[1]", fallback: 255)))
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[2].modifier[3].arg[1].value", fallback: 5))
+                    Text(section.description2)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, __designTimeInteger("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[3].modifier[3].arg[1].value", fallback: 10))
+                        .frame(alignment: .top)
+                }
+                .frame(width: geometry.size.width * __designTimeFloat("#2694.[6].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].modifier[0].arg[0].value.[0]", fallback: 0.45))
+            }
+            .padding()
+        }
+    
+#sourceLocation()
+    }
+}
+
 extension HowItWorksView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 119)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 151)
         VStack {
             Image(section.imageName)
                 .resizable()
@@ -29,8 +94,7 @@ extension HowItWorksView {
         }
         .padding()
         .cornerRadius(__designTimeInteger("#2694.[4].[1].property.[0].[0].modifier[1].arg[0].value", fallback: 10))
-        .shadow(radius: __designTimeInteger("#2694.[4].[1].property.[0].[0].modifier[2].arg[0].value", fallback: 5))
-        .aspectRatio(__designTimeInteger("#2694.[4].[1].property.[0].[0].modifier[3].arg[0].value", fallback: 1), contentMode: .fit)
+        .aspectRatio(__designTimeInteger("#2694.[4].[1].property.[0].[0].modifier[2].arg[0].value", fallback: 1), contentMode: .fit)
     
 #sourceLocation()
     }
@@ -38,7 +102,7 @@ extension HowItWorksView {
 
 extension CarouselImageView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 64)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 96)
         GeometryReader { geometry in
             ZStack {
                 TabView(selection: $currentImageIndex) {
@@ -99,7 +163,7 @@ extension HomeView {
                     .padding()
                 
                 VStack(spacing: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[0].value", fallback: 20)) {
-                    Text(__designTimeString("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].arg[0].value", fallback: "Come Funziona"))
+                    Text(__designTimeString("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].arg[0].value", fallback: "COME FUNZIONA"))
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[1]", fallback: 255)))
@@ -114,7 +178,39 @@ extension HomeView {
                 .background(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[0].value.[0]", fallback: 246)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255.0), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[1].value.[0]", fallback: 235)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255.0), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[2].value.[0]", fallback: 242)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[0].arg[0].value.arg[2].value.[1]", fallback: 255.0)))
                 .safeAreaPadding(.bottom)
                 .safeAreaPadding(.top)
+                
+                VStack(spacing: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[0].value", fallback: 20)) {
+                    Text(__designTimeString("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].arg[0].value", fallback: "LE NOSTRE BOWL"))
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[3].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[1]", fallback: 255)))
+                    OverviewCarouselView()
+                }
+                .background(Color.white)
+                .safeAreaPadding(.top)
+                
+                VStack(spacing: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[0].value", fallback: 20)) {
+                    Text(__designTimeString("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].arg[0].value", fallback: "PICK UP"))
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value.[1]", fallback: 255)))
+                        .padding(.top)
+                    
+                    HStack(spacing: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[1].arg[0].value", fallback: 5)) {
+                        Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata\nOrdina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
+                            .font(.caption)
+                            .foregroundColor(Color.gray)
+                            .padding()
+                        Image(__designTimeString("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[1].arg[1].value.[1].arg[0].value", fallback: "pickup"))
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                            .cornerRadius(__designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].arg[1].value.[1].arg[1].value.[1].modifier[3].arg[0].value", fallback: 20))
+                    }
+                }
+                .background(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[0].value.[0]", fallback: 246)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255.0), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[1].value.[0]", fallback: 235)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255.0), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[2].value.[0]", fallback: 242)/__designTimeFloat("#2694.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[2].value.[1]", fallback: 255.0)))
             }
+            .safeAreaPadding(.top)
         }
         .background(Color(red: __designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[0].value.[0]", fallback: 102)/__designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[1].value.[0]", fallback: 127)/__designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[2].value.[0]", fallback: 54)/__designTimeInteger("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[2].value.[1]", fallback: 255), opacity: __designTimeFloat("#2694.[1].[2].property.[0].[0].modifier[0].arg[0].value.arg[3].value", fallback: 0.9)))
     
@@ -126,6 +222,9 @@ import struct Bouli.HomeView
 import struct Bouli.CarouselImageView
 import struct Bouli.HowItWorks
 import struct Bouli.HowItWorksView
+import struct Bouli.Overview
+import struct Bouli.OverviewView
+import struct Bouli.OverviewCarouselView
 #Preview {
     HomeView()
 }

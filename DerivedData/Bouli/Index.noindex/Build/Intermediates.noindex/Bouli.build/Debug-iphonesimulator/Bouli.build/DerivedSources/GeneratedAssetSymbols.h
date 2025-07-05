@@ -27,4 +27,7 @@ static NSString * const ACImageNameHome2 AC_SWIFT_PRIVATE = @"home2";
 /// The "home3" asset catalog image resource.
 static NSString * const ACImageNameHome3 AC_SWIFT_PRIVATE = @"home3";
 
+/// The "pickup" asset catalog image resource.
+static NSString * const ACImageNamePickup AC_SWIFT_PRIVATE = @"pickup";
+
 #undef AC_SWIFT_PRIVATE

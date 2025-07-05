@@ -52,6 +52,9 @@ extension DeveloperToolsSupport.ImageResource {
     /// The "home3" asset catalog image resource.
     static let home3 = DeveloperToolsSupport.ImageResource(name: "home3", bundle: resourceBundle)
 
+    /// The "pickup" asset catalog image resource.
+    static let pickup = DeveloperToolsSupport.ImageResource(name: "pickup", bundle: resourceBundle)
+
 }
 
 // MARK: - Color Symbol Extensions -
@@ -154,6 +157,15 @@ extension AppKit.NSImage {
 #endif
     }
 
+    /// The "pickup" asset catalog image.
+    static var pickup: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .pickup)
+#else
+        .init()
+#endif
+    }
+
 }
 #endif
 
@@ -220,6 +232,15 @@ extension UIKit.UIImage {
     static var home3: UIKit.UIImage {
 #if !os(watchOS)
         .init(resource: .home3)
+#else
+        .init()
+#endif
+    }
+
+    /// The "pickup" asset catalog image.
+    static var pickup: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .pickup)
 #else
         .init()
 #endif

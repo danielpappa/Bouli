@@ -33,7 +33,7 @@ struct HomeView: View {
                     .padding()
                 
                 VStack(spacing: 20) {
-                    Text("Come Funziona")
+                    Text("COME FUNZIONA")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
@@ -48,7 +48,39 @@ struct HomeView: View {
                 .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
                 .safeAreaPadding(.bottom)
                 .safeAreaPadding(.top)
+                
+                VStack(spacing: 20) {
+                    Text("LE NOSTRE BOWL")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                    OverviewCarouselView()
+                }
+                .background(Color.white)
+                .safeAreaPadding(.top)
+                
+                VStack(spacing: 20) {
+                    Text("PICK UP")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        .padding(.top)
+                    
+                    HStack(spacing: 5) {
+                        Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata\nOrdina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
+                            .font(.caption)
+                            .foregroundColor(Color.gray)
+                            .padding()
+                        Image("pickup")
+                            .resizable()
+                            .scaledToFit()
+                            .padding()
+                            .cornerRadius(20)
+                    }
+                }
+                .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
             }
+            .safeAreaPadding(.top)
         }
         .background(Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.9))
     }
@@ -134,8 +166,86 @@ struct HowItWorksView: View {
         }
         .padding()
         .cornerRadius(10)
-        .shadow(radius: 5)
         .aspectRatio(1, contentMode: .fit)
+    }
+}
+
+struct Overview: Identifiable {
+    let id = UUID()
+    let imageName: String
+    let title1: String
+    let description1: String
+    let title2: String
+    let description2: String
+}
+
+struct OverviewView: View {
+    let section: Overview
+    
+    var body: some View {
+        GeometryReader { geometry in
+            HStack(alignment: .top) {
+                Image(section.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: geometry.size.width * 0.45)
+                    .clipped()
+                    .cornerRadius(20)
+                VStack(alignment: .leading) {
+                    Text(section.title1)
+                        .font(.callout)
+                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 5)
+                    Text(section.description1)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.secondary)
+                        .frame(alignment: .top)
+                    Text(section.title2)
+                        .font(.subheadline)
+                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 5)
+                    Text(section.description2)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 10)
+                        .frame(alignment: .top)
+                }
+                .frame(width: geometry.size.width * 0.45)
+            }
+            .padding()
+        }
+    }
+}
+
+struct OverviewCarouselView: View {
+    let sections: [Overview] = [
+        Overview(imageName: "home1", title1: "Addio, ai morsi della fame!", description1: "Carboidrati prevalentemente complessi garantiscono un livello constante di zucchero nel sangue.", title2: "Lattughe ed ortaggi", description2: "che si presentano con un carico extra di vitamine e minerali."),
+        Overview(imageName: "home2", title1: "Ancora più verdure?", description1: "Sì! Perché un piatto non può mai essere troppo sano! ", title2: "E per un finale agrodolce", description2: "frutta e bacche di bosco di stagione."),
+        Overview(imageName: "home3", title1: "Noci e semi", description1: "contengono preziosi acidi grassi essenziali, proteine e minerali.", title2: "Condimenti cremosi e colorati", description2: "da versare, mescolare, ma soprattutto, da gustare!"),
+        Overview(imageName: "home3", title1: "Fibre alimentari", description1: "che troviamo nelle verdure, facilitano la digestione e non solo.", title2: "Composizione di aminoacidi ottima!", description2: "Grazie alla miscela di cereali e legumi.")
+    ]
+    
+    @State private var currentImageIndex = 0
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack {
+                TabView() {
+                    ForEach(sections) { section in
+                        OverviewView(section: section)
+                            .tag(section.id)
+                    }
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+            .frame(height: geometry.size.height)
+        }
+        .frame(height: 250)
     }
 }
 
