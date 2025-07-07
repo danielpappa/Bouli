@@ -24,7 +24,11 @@
       },
       {
         "comment": "",
-        "key": "Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata\nOrdina tramite WhatsApp entro le 9:00, prendilo e... divertiti !"
+        "key": "Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata"
+      },
+      {
+        "comment": "",
+        "key": "Ordina tramite WhatsApp entro le 9:00, prendilo e... divertiti !"
       }
     ]
   },

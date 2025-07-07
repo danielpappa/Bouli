@@ -58,6 +58,7 @@ struct HomeView: View {
                 }
                 .background(Color.white)
                 .safeAreaPadding(.top)
+                .safeAreaPadding(.bottom)
                 
                 VStack(spacing: 20) {
                     Text("PICK UP")
@@ -66,23 +67,48 @@ struct HomeView: View {
                         .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
                         .padding(.top)
                     
-                    HStack(spacing: 5) {
-                        Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata\nOrdina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
-                            .font(.caption)
-                            .foregroundColor(Color.gray)
-                            .padding()
+                    ZStack(alignment: .bottomLeading) {
                         Image("pickup")
                             .resizable()
-                            .scaledToFit()
-                            .padding()
-                            .cornerRadius(20)
+                            .scaledToFill()
+                            .clipped()
+                        LinearGradient(
+                                    gradient: Gradient(colors: [
+                                        .black.opacity(0.8),
+                                        .black.opacity(0.0)
+                                    ]),
+                                    startPoint: .bottom,
+                                    endPoint: .top
+                                )
+                        VStack() {
+                            Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .padding(.horizontal)
+                            Text("Ordina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
+                                .font(.caption)
+                                .foregroundColor(Color.white)
+                                .padding()
+                        }
                     }
+                    .cornerRadius(20)
+                    .padding(.horizontal)
                 }
                 .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
             }
             .safeAreaPadding(.top)
         }
-        .background(Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.9))
+        .background(
+            GeometryReader { geometry in
+                VStack(spacing: 0) {
+                    Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.9)
+                        .frame(height: geometry.size.height * 0.6)
+                    Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0)
+                        .frame(height: geometry.size.height * 0.6)
+                }
+                .edgesIgnoringSafeArea(.all)
+            }
+        )
     }
 }
 
@@ -183,41 +209,44 @@ struct OverviewView: View {
     let section: Overview
     
     var body: some View {
-        GeometryReader { geometry in
-            HStack(alignment: .top) {
-                Image(section.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: geometry.size.width * 0.45)
-                    .clipped()
-                    .cornerRadius(20)
-                VStack(alignment: .leading) {
-                    Text(section.title1)
-                        .font(.callout)
-                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                        .multilineTextAlignment(.leading)
-                        .padding(.top, 5)
-                    Text(section.description1)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(.secondary)
-                        .frame(alignment: .top)
-                    Text(section.title2)
-                        .font(.subheadline)
-                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                        .multilineTextAlignment(.leading)
-                        .padding(.top, 5)
-                    Text(section.description2)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .foregroundColor(.secondary)
-                        .padding(.bottom, 10)
-                        .frame(alignment: .top)
-                }
-                .frame(width: geometry.size.width * 0.45)
+        VStack(alignment: .leading, spacing: 0) {
+            Image(section.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped()
+                .frame(height: 150)
+            VStack(alignment: .leading) {
+                Text(section.title1)
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                    .multilineTextAlignment(.leading)
+                    .padding(.top, 15)
+                Text(section.description1)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.secondary)
+                    .frame(alignment: .top)
+                Text(section.title2)
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                    .multilineTextAlignment(.leading)
+                    .padding(.top, 5)
+                Text(section.description2)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.secondary)
+                    .frame(alignment: .top)
             }
-            .padding()
+            .padding(.horizontal)
+            Spacer(minLength: 0)
         }
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.gray, lineWidth: 0.25)
+        )
     }
 }
 
@@ -234,18 +263,23 @@ struct OverviewCarouselView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                TabView() {
-                    ForEach(sections) { section in
-                        OverviewView(section: section)
-                            .tag(section.id)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 15) {
+                        ForEach(sections) { section in
+                            OverviewView(section: section)
+                                .tag(section.id)
+                                .frame(width: geometry.size.width * 0.85 - 15)
+                                .frame(maxHeight: .infinity)
+                        }
                     }
+                    .scrollTargetLayout()
+                    .scrollTargetBehavior(.paging)
+                    .padding(.horizontal)
                 }
+                .frame(height: 350)
             }
-            .tabViewStyle(.page(indexDisplayMode: .always))
-            .indexViewStyle(.page(backgroundDisplayMode: .interactive))
-            .frame(height: geometry.size.height)
         }
-        .frame(height: 250)
+        .frame(height: 350)
     }
 }
 
