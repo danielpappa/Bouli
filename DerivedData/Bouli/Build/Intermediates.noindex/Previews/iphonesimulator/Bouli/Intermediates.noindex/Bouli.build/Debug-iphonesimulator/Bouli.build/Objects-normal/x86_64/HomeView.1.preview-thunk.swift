@@ -10,7 +10,7 @@ import SwiftUI
 
 extension OverviewCarouselView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 264)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 265)
         GeometryReader { geometry in
             ZStack {
                 ScrollView(.horizontal, showsIndicators: __designTimeBoolean("#5668.[7].[2].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[1].value", fallback: false)) {
@@ -37,7 +37,7 @@ extension OverviewCarouselView {
 
 extension OverviewView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 212)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 213)
         VStack(alignment: .leading, spacing: __designTimeInteger("#5668.[6].[1].property.[0].[0].arg[1].value", fallback: 0)) {
             Image(section.imageName)
                 .resizable()
@@ -83,7 +83,7 @@ extension OverviewView {
 
 extension HowItWorksView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 177)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 178)
         VStack {
             Image(section.imageName)
                 .resizable()
@@ -110,7 +110,7 @@ extension HowItWorksView {
 
 extension CarouselImageView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 122)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/HomeView.swift", line: 123)
         GeometryReader { geometry in
             ZStack {
                 TabView(selection: $currentImageIndex) {
@@ -235,6 +235,7 @@ extension HomeView {
                 .background(Color(red: __designTimeInteger("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[0].value.[0]", fallback: 246)/__designTimeFloat("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255.0), green: __designTimeInteger("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[1].value.[0]", fallback: 235)/__designTimeFloat("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255.0), blue: __designTimeInteger("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[2].value.[0]", fallback: 242)/__designTimeFloat("#5668.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[4].modifier[0].arg[0].value.arg[2].value.[1]", fallback: 255.0)))
             }
             .safeAreaPadding(.top)
+            .safeAreaPadding(.bottom)
         }
         .background(
             GeometryReader { geometry in

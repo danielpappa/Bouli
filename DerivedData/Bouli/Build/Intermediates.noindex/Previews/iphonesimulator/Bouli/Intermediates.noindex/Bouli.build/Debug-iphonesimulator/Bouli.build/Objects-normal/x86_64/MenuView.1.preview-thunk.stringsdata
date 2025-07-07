@@ -1,0 +1,72 @@
+{
+  "source": "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/MenuView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Price: %@"
+      },
+      {
+        "comment": "",
+        "key": "Quantità:"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Costo Totale:"
+      },
+      {
+        "comment": "",
+        "key": "Ordina"
+      },
+      {
+        "comment": "",
+        "key": "Chiudi"
+      },
+      {
+        "comment": "",
+        "key": "Normale:"
+      },
+      {
+        "comment": "",
+        "key": "Grande:"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "bouli"
+      },
+      {
+        "comment": "",
+        "key": "IL TUO PRANZO SANO"
+      },
+      {
+        "comment": "",
+        "key": "MENÙ"
+      },
+      {
+        "comment": "",
+        "key": "Extra Ingredients"
+      },
+      {
+        "comment": "",
+        "key": "pane extra"
+      },
+      {
+        "comment": "",
+        "key": "€0.50"
+      },
+      {
+        "comment": "",
+        "key": "condimento extra"
+      }
+    ]
+  },
+  "version": 1
+}

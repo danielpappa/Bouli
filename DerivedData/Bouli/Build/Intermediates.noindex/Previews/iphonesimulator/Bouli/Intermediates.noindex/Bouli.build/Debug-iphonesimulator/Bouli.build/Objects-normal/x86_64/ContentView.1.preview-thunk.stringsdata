@@ -1,5 +1,24 @@
 {
   "source": "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/ContentView.1.preview-thunk.swift",
-  "tables": {},
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Menu"
+      },
+      {
+        "comment": "",
+        "key": "Orders"
+      },
+      {
+        "comment": "",
+        "key": "Profile"
+      }
+    ]
+  },
   "version": 1
 }

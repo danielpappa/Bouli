@@ -1,0 +1,72 @@
+{
+  "source": "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Build/Intermediates.noindex/Previews/iphonesimulator/Bouli/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/Objects-normal/x86_64/OrdersView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Order #%@"
+      },
+      {
+        "comment": "",
+        "key": "Order Details"
+      },
+      {
+        "comment": "",
+        "key": "Items"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Total"
+      },
+      {
+        "comment": "",
+        "key": "Status"
+      },
+      {
+        "comment": "",
+        "key": "Status: %@"
+      },
+      {
+        "comment": "",
+        "key": "bouli"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Current Orders"
+      },
+      {
+        "comment": "",
+        "key": "No current orders."
+      },
+      {
+        "comment": "",
+        "key": "Estimated Arrival: %@"
+      },
+      {
+        "comment": "",
+        "key": "Delivery in Progress"
+      },
+      {
+        "comment": "",
+        "key": "Pickup Location"
+      },
+      {
+        "comment": "",
+        "key": "Order History View"
+      },
+      {
+        "comment": "",
+        "key": "View Order History"
+      }
+    ]
+  },
+  "version": 1
+}

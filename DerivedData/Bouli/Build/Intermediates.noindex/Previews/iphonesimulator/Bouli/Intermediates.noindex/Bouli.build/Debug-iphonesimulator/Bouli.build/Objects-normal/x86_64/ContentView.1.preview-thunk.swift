@@ -10,37 +10,24 @@ import SwiftUI
 
 extension ContentView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift", line: 14)
-        NavigationStack {                
-            Group {
-                switch selectedMenuSection {
-                case .home:
-                    HomeView()
-                case .menu:
-                    MenuView()
-                case .orders:
-                    OrdersView()
-                case .profile:
-                    ProfileView()
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift", line: 12)
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label(__designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.[0].arg[0].value", fallback: "Home"), systemImage: __designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.[0].arg[1].value", fallback: "house.fill"))
                 }
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        withAnimation {
-                            sideMenuIsShowing.toggle()
-                        }
-                    }) {
-                        Image(systemName: __designTimeString("#2654.[1].[2].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value", fallback: "line.horizontal.3"))
-                            .foregroundColor(.white)
-                    }
+            MenuView()
+                .tabItem {
+                    Label(__designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[1].modifier[0].arg[0].value.[0].arg[0].value", fallback: "Menu"), systemImage: __designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[1].modifier[0].arg[0].value.[0].arg[1].value", fallback: "fork.knife"))
                 }
-            }
-        }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.white, for: .navigationBar)
-        .fullScreenCover(isPresented: $sideMenuIsShowing) {
-            SideMenuView(isShowing: $sideMenuIsShowing, selectedSection: $selectedMenuSection)
+            OrdersView()
+                .tabItem {
+                    Label(__designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[2].modifier[0].arg[0].value.[0].arg[0].value", fallback: "Orders"), systemImage: __designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[2].modifier[0].arg[0].value.[0].arg[1].value", fallback: "bag.fill"))
+                }
+            ProfileView()
+                .tabItem {
+                    Label(__designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[3].modifier[0].arg[0].value.[0].arg[0].value", fallback: "Profile"), systemImage: __designTimeString("#17157.[1].[0].property.[0].[0].arg[0].value.[3].modifier[0].arg[0].value.[0].arg[1].value", fallback: "person.fill"))
+                }
         }
     
 #sourceLocation()

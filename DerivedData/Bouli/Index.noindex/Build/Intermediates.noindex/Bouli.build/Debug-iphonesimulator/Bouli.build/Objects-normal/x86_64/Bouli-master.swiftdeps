@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)"
-options: "3336bb2ade62607ee884d8764c98a109b5d3a5288c12b5f1bd3b8638dd26c70e"
-build_start_time: [1751608838, 177520000]
-build_end_time: [1751608960, 681603000]
-inputs:
-  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/BouliApp.swift": [1751608733, 673609044]
-  "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift": [1751608733, 687368889]
-  ? "/Users/pappalardodaniel/Desktop/Bouli/Bouli/DerivedData/Bouli/Index.noindex/Build/Intermediates.noindex/Bouli.build/Debug-iphonesimulator/Bouli.build/DerivedSources/GeneratedAssetSymbols.swift"
-  : [1751608827, 319637096]

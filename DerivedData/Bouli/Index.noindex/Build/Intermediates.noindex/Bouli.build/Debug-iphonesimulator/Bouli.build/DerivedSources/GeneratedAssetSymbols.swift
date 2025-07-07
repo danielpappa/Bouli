@@ -43,6 +43,9 @@ extension DeveloperToolsSupport.ImageResource {
     /// The "CFScegliere" asset catalog image resource.
     static let cfScegliere = DeveloperToolsSupport.ImageResource(name: "CFScegliere", bundle: resourceBundle)
 
+    /// The "beppe" asset catalog image resource.
+    static let beppe = DeveloperToolsSupport.ImageResource(name: "beppe", bundle: resourceBundle)
+
     /// The "home1" asset catalog image resource.
     static let home1 = DeveloperToolsSupport.ImageResource(name: "home1", bundle: resourceBundle)
 
@@ -52,8 +55,17 @@ extension DeveloperToolsSupport.ImageResource {
     /// The "home3" asset catalog image resource.
     static let home3 = DeveloperToolsSupport.ImageResource(name: "home3", bundle: resourceBundle)
 
+    /// The "moidl" asset catalog image resource.
+    static let moidl = DeveloperToolsSupport.ImageResource(name: "moidl", bundle: resourceBundle)
+
     /// The "pickup" asset catalog image resource.
     static let pickup = DeveloperToolsSupport.ImageResource(name: "pickup", bundle: resourceBundle)
+
+    /// The "rosamint" asset catalog image resource.
+    static let rosamint = DeveloperToolsSupport.ImageResource(name: "rosamint", bundle: resourceBundle)
+
+    /// The "wrap" asset catalog image resource.
+    static let wrap = DeveloperToolsSupport.ImageResource(name: "wrap", bundle: resourceBundle)
 
 }
 
@@ -130,6 +142,15 @@ extension AppKit.NSImage {
 #endif
     }
 
+    /// The "beppe" asset catalog image.
+    static var beppe: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .beppe)
+#else
+        .init()
+#endif
+    }
+
     /// The "home1" asset catalog image.
     static var home1: AppKit.NSImage {
 #if !targetEnvironment(macCatalyst)
@@ -157,10 +178,37 @@ extension AppKit.NSImage {
 #endif
     }
 
+    /// The "moidl" asset catalog image.
+    static var moidl: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .moidl)
+#else
+        .init()
+#endif
+    }
+
     /// The "pickup" asset catalog image.
     static var pickup: AppKit.NSImage {
 #if !targetEnvironment(macCatalyst)
         .init(resource: .pickup)
+#else
+        .init()
+#endif
+    }
+
+    /// The "rosamint" asset catalog image.
+    static var rosamint: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .rosamint)
+#else
+        .init()
+#endif
+    }
+
+    /// The "wrap" asset catalog image.
+    static var wrap: AppKit.NSImage {
+#if !targetEnvironment(macCatalyst)
+        .init(resource: .wrap)
 #else
         .init()
 #endif
@@ -210,6 +258,15 @@ extension UIKit.UIImage {
 #endif
     }
 
+    /// The "beppe" asset catalog image.
+    static var beppe: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .beppe)
+#else
+        .init()
+#endif
+    }
+
     /// The "home1" asset catalog image.
     static var home1: UIKit.UIImage {
 #if !os(watchOS)
@@ -237,10 +294,37 @@ extension UIKit.UIImage {
 #endif
     }
 
+    /// The "moidl" asset catalog image.
+    static var moidl: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .moidl)
+#else
+        .init()
+#endif
+    }
+
     /// The "pickup" asset catalog image.
     static var pickup: UIKit.UIImage {
 #if !os(watchOS)
         .init(resource: .pickup)
+#else
+        .init()
+#endif
+    }
+
+    /// The "rosamint" asset catalog image.
+    static var rosamint: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .rosamint)
+#else
+        .init()
+#endif
+    }
+
+    /// The "wrap" asset catalog image.
+    static var wrap: UIKit.UIImage {
+#if !os(watchOS)
+        .init(resource: .wrap)
 #else
         .init()
 #endif

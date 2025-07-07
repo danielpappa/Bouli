@@ -50,6 +50,16 @@
 			<key>catalogPath</key>
 			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameBeppe</string>
+			<key>relativePath</key>
+			<string>./beppe.imageset</string>
+			<key>swiftSymbol</key>
+			<string>beppe</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNameHome1</string>
 			<key>relativePath</key>
 			<string>./home1.imageset</string>
@@ -80,11 +90,41 @@
 			<key>catalogPath</key>
 			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
 			<key>objcSymbol</key>
+			<string>ACImageNameMoidl</string>
+			<key>relativePath</key>
+			<string>./moidl.imageset</string>
+			<key>swiftSymbol</key>
+			<string>moidl</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
 			<string>ACImageNamePickup</string>
 			<key>relativePath</key>
 			<string>./pickup.imageset</string>
 			<key>swiftSymbol</key>
 			<string>pickup</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameRosamint</string>
+			<key>relativePath</key>
+			<string>./rosamint.imageset</string>
+			<key>swiftSymbol</key>
+			<string>rosamint</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameWrap</string>
+			<key>relativePath</key>
+			<string>./wrap.imageset</string>
+			<key>swiftSymbol</key>
+			<string>wrap</string>
 		</dict>
 	</array>
 	<key>symbols</key>

@@ -4,7 +4,95 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Hello, World!"
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "John Doe"
+      },
+      {
+        "comment": "",
+        "key": "john.doe@example.com"
+      },
+      {
+        "comment": "",
+        "key": "+39 333 333333"
+      },
+      {
+        "comment": "",
+        "key": "Account Settings View"
+      },
+      {
+        "comment": "",
+        "key": "Your Activity View"
+      },
+      {
+        "comment": "",
+        "key": "Account Settings"
+      },
+      {
+        "comment": "",
+        "key": "Order History"
+      },
+      {
+        "comment": "",
+        "key": "Payment Methods View"
+      },
+      {
+        "comment": "",
+        "key": "Promo Code View"
+      },
+      {
+        "comment": "",
+        "key": "Refer a Friend View"
+      },
+      {
+        "comment": "",
+        "key": "Payment Methods"
+      },
+      {
+        "comment": "",
+        "key": "Promo Codes"
+      },
+      {
+        "comment": "",
+        "key": "Refer a Friend"
+      },
+      {
+        "comment": "",
+        "key": "App Language View"
+      },
+      {
+        "comment": "",
+        "key": "Notifications View"
+      },
+      {
+        "comment": "",
+        "key": "App Language"
+      },
+      {
+        "comment": "",
+        "key": "Notifications"
+      },
+      {
+        "comment": "",
+        "key": "Help & Support View"
+      },
+      {
+        "comment": "",
+        "key": "Legal Information View"
+      },
+      {
+        "comment": "",
+        "key": "Help & Support"
+      },
+      {
+        "comment": "",
+        "key": "Legal Information"
+      },
+      {
+        "comment": "",
+        "key": "Sign Out"
       }
     ]
   },

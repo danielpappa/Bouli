@@ -97,6 +97,7 @@ struct HomeView: View {
                 .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
             }
             .safeAreaPadding(.top)
+            .safeAreaPadding(.bottom)
         }
         .background(
             GeometryReader { geometry in

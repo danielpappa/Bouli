@@ -1,5 +1,24 @@
 {
   "source": "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/ContentView.swift",
-  "tables": {},
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Menu"
+      },
+      {
+        "comment": "",
+        "key": "Orders"
+      },
+      {
+        "comment": "",
+        "key": "Profile"
+      }
+    ]
+  },
   "version": 1
 }

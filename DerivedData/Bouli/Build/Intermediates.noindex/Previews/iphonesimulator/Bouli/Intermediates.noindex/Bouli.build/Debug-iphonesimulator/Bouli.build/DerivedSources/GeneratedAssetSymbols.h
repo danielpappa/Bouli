@@ -18,6 +18,9 @@ static NSString * const ACImageNameCFContattaci AC_SWIFT_PRIVATE = @"CFContattac
 /// The "CFScegliere" asset catalog image resource.
 static NSString * const ACImageNameCFScegliere AC_SWIFT_PRIVATE = @"CFScegliere";
 
+/// The "beppe" asset catalog image resource.
+static NSString * const ACImageNameBeppe AC_SWIFT_PRIVATE = @"beppe";
+
 /// The "home1" asset catalog image resource.
 static NSString * const ACImageNameHome1 AC_SWIFT_PRIVATE = @"home1";
 
@@ -27,7 +30,16 @@ static NSString * const ACImageNameHome2 AC_SWIFT_PRIVATE = @"home2";
 /// The "home3" asset catalog image resource.
 static NSString * const ACImageNameHome3 AC_SWIFT_PRIVATE = @"home3";
 
+/// The "moidl" asset catalog image resource.
+static NSString * const ACImageNameMoidl AC_SWIFT_PRIVATE = @"moidl";
+
 /// The "pickup" asset catalog image resource.
 static NSString * const ACImageNamePickup AC_SWIFT_PRIVATE = @"pickup";
+
+/// The "rosamint" asset catalog image resource.
+static NSString * const ACImageNameRosamint AC_SWIFT_PRIVATE = @"rosamint";
+
+/// The "wrap" asset catalog image resource.
+static NSString * const ACImageNameWrap AC_SWIFT_PRIVATE = @"wrap";
 
 #undef AC_SWIFT_PRIVATE

@@ -4,7 +4,67 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Hello, World!"
+        "key": "bouli"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Current Orders"
+      },
+      {
+        "comment": "",
+        "key": "No current orders."
+      },
+      {
+        "comment": "",
+        "key": "Delivery in Progress"
+      },
+      {
+        "comment": "",
+        "key": "Estimated Arrival: %@"
+      },
+      {
+        "comment": "",
+        "key": "Pickup Location"
+      },
+      {
+        "comment": "",
+        "key": "Order History View"
+      },
+      {
+        "comment": "",
+        "key": "View Order History"
+      },
+      {
+        "comment": "",
+        "key": "Status: %@"
+      },
+      {
+        "comment": "",
+        "key": "Order #%@"
+      },
+      {
+        "comment": "",
+        "key": "Order Details"
+      },
+      {
+        "comment": "",
+        "key": "Items"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Total"
+      },
+      {
+        "comment": "",
+        "key": "Status"
       }
     ]
   },

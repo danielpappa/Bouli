@@ -4,7 +4,67 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Hello, World!"
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "bouli"
+      },
+      {
+        "comment": "",
+        "key": "IL TUO PRANZO SANO"
+      },
+      {
+        "comment": "",
+        "key": "MENÙ"
+      },
+      {
+        "comment": "",
+        "key": "Extra Ingredients"
+      },
+      {
+        "comment": "",
+        "key": "pane extra"
+      },
+      {
+        "comment": "",
+        "key": "€0.50"
+      },
+      {
+        "comment": "",
+        "key": "condimento extra"
+      },
+      {
+        "comment": "",
+        "key": "Normale:"
+      },
+      {
+        "comment": "",
+        "key": "Grande:"
+      },
+      {
+        "comment": "",
+        "key": "Price: %@"
+      },
+      {
+        "comment": "",
+        "key": "Quantità:"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "Costo Totale:"
+      },
+      {
+        "comment": "",
+        "key": "Ordina"
+      },
+      {
+        "comment": "",
+        "key": "Chiudi"
       }
     ]
   },
