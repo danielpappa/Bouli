@@ -44,7 +44,19 @@
       },
       {
         "comment": "",
-        "key": "Price: %@"
+        "key": "Dettagli Ordine"
+      },
+      {
+        "comment": "",
+        "key": "%@ %@"
+      },
+      {
+        "comment": "",
+        "key": "Prezzo: %@"
+      },
+      {
+        "comment": "",
+        "key": "Aggiungi"
       },
       {
         "comment": "",
@@ -57,14 +69,6 @@
       {
         "comment": "",
         "key": "Costo Totale:"
-      },
-      {
-        "comment": "",
-        "key": "Ordina"
-      },
-      {
-        "comment": "",
-        "key": "Chiudi"
       }
     ]
   },

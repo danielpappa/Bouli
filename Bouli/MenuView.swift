@@ -194,6 +194,8 @@ struct MenuItemView: View {
     let item: MenuItem
     
     @State private var showingOrderDetails = false
+    @State private var currentPriceString = ""
+    @State private var currentSelectedSize = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -203,6 +205,7 @@ struct MenuItemView: View {
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        .padding(.top)
                     
                     Text(item.description)
                         .font(.subheadline)
@@ -210,9 +213,10 @@ struct MenuItemView: View {
                 }
                 Spacer()
                 VStack(alignment: .trailing, spacing: 4) {
-                    // Button for "Normale" price
                     Button(action: {
                         showingOrderDetails = true
+                        currentPriceString = item.priceSmall
+                        currentSelectedSize = "Normale"
                     }) {
                         HStack(spacing: 5) {
                             Text("Normale:")
@@ -228,16 +232,12 @@ struct MenuItemView: View {
                         .background(Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.5))
                         .cornerRadius(8)
                     }
-                    .sheet(isPresented: $showingOrderDetails) {
-                        PopUpOrderView(
-                            item: item,
-                            selectedPriceString: item.priceSmall
-                        )
-                    }
                     
                     if let largePrice = item.priceLarge, !largePrice.isEmpty {
                         Button(action: {
                             showingOrderDetails = true
+                            currentPriceString = largePrice
+                            currentSelectedSize = "Grande"
                         }) {
                             HStack(spacing: 5) {
                                 Text("Grande:")
@@ -253,16 +253,19 @@ struct MenuItemView: View {
                             .background(Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.5))
                             .cornerRadius(8)
                         }
-                        .sheet(isPresented: $showingOrderDetails) {
-                            PopUpOrderView(
-                                item: item,
-                                selectedPriceString: largePrice
-                            )
-                        }
+                    }
                         Image(item.imageName)
                             .resizable()
                             .scaledToFit()
-                    }
+                }
+                .sheet(isPresented: $showingOrderDetails) {
+                    PopUpOrderView(
+                        item: item,
+                        selectedPriceString: currentPriceString,
+                        selectedSize: currentSelectedSize
+                    )
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
                 }
             }
                 
@@ -297,6 +300,7 @@ struct MenuItemView: View {
 struct PopUpOrderView: View {
     let item: MenuItem
     let selectedPriceString: String
+    let selectedSize: String
 
     @Environment(\.dismiss) var dismiss
     @State private var amount: Int = 1
@@ -307,64 +311,62 @@ struct PopUpOrderView: View {
     }
 
     var body: some View {
-        VStack(spacing: 15) {
-            Text(item.title)
-                .font(.headline)
-                .fontWeight(.bold)
-                .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                .multilineTextAlignment(.center)
-
-            Text("Price: \(selectedPriceString)")
-                .font(.subheadline)
-                .foregroundColor(.gray)
-            
-            Divider()
-
-            HStack {
-                Text("Quantità:")
-                    .font(.subheadline)
+        NavigationView {
+            VStack(spacing: 15) {
                 
-                Spacer()
-                
-                Stepper(value: $amount, in: 1...99) {
-                    Text("\(amount)")
-                }
-                .frame(width: 120)
-            }
-            .padding(.horizontal)
-            
-            VStack(spacing: 5) {
-                Text("Costo Totale:")
-                    .font(.callout)
-                    .foregroundColor(.secondary)
-                Text(String(format: "€%.2f", totalCost))
-                    .font(.title2)
+                Text("\(item.title) \(selectedSize)")
+                    .font(.headline)
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-            }
-            .padding(.vertical, 5)
-
-            Divider()
-
-            HStack(spacing: 15) {
-                Button("Ordina") {
-                    print("Ordinato \(amount) di \(item.title) per \(String(format: "€%.2f", totalCost))")
+                    .multilineTextAlignment(.center)
+                
+                Text("Prezzo: \(selectedPriceString)")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                
+                HStack {
+                    Text("Quantità:")
+                        .font(.subheadline)
+                    
+                    Spacer()
+                    
+                    Stepper(value: $amount, in: 1...99) {
+                        Text("\(amount)")
+                    }
+                    .frame(width: 120)
+                }
+                .padding(.horizontal)
+                
+                VStack(spacing: 5) {
+                    Text("Costo Totale:")
+                        .font(.callout)
+                        .foregroundColor(.secondary)
+                    Text(String(format: "€%.2f", totalCost))
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                }
+                .padding(.vertical, 5)
+                
+                Button("Aggiungi") {
+                    print("Ordinato \(amount) di \(item.title) \(selectedSize) per \(String(format: "€%.2f", totalCost))")
                     dismiss()
                 }
-
-                Button("Chiudi") {
-                    dismiss()
-                }
+                .padding()
+                .padding(.horizontal)
+                .background(Color(red: 102/255, green: 127/255, blue: 54/255))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                
+                Spacer()
             }
-            .padding(.top, 10)
-        }
-        .padding(20)
-        .frame(width: UIScreen.main.bounds.width * 0.8)
-        .background(Color.white)
-        .cornerRadius(20)
-        .shadow(radius: 10)
-        .onAppear {
-            self.basePrice = parsePriceString(selectedPriceString)
+            .padding(.horizontal, 20)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Dettagli Ordine")
+            .navigationBarBackButtonHidden(true)
+            .onAppear {
+                self.basePrice = parsePriceString(selectedPriceString)
+            }
         }
     }
 

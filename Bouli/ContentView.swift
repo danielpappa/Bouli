@@ -27,6 +27,7 @@ struct ContentView: View {
                     Label("Profile", systemImage: "person.fill")
                 }
         }
+        .tint(Color(red: 102/255, green: 127/255, blue: 54/255))
     }
 }
 
