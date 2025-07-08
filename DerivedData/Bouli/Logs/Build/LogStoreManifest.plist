@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>0423136A-3682-46BE-B1AB-DBB59778C98B</key>
+		<key>1368548A-E53F-4223-A6C5-DEF2CB82DAD2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0423136A-3682-46BE-B1AB-DBB59778C98B.xcactivitylog</string>
+			<string>1368548A-E53F-4223-A6C5-DEF2CB82DAD2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Build for Previews Bouli</string>
 			<key>timeStartedRecording</key>
-			<real>773648844.04024303</real>
+			<real>773654127.94908094</real>
 			<key>timeStoppedRecording</key>
-			<real>773648863.09576404</real>
+			<real>773654146.43486595</real>
 			<key>title</key>
 			<string>Build for Previews Bouli</string>
 			<key>uniqueIdentifier</key>
-			<string>0423136A-3682-46BE-B1AB-DBB59778C98B</string>
+			<string>1368548A-E53F-4223-A6C5-DEF2CB82DAD2</string>
 		</dict>
-		<key>0438C9B4-0DA4-467E-A164-48089147D9FE</key>
+		<key>2FBF83B0-607A-42FC-A60D-213A884CEEAE</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0438C9B4-0DA4-467E-A164-48089147D9FE.xcactivitylog</string>
+			<string>2FBF83B0-607A-42FC-A60D-213A884CEEAE.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +82,15 @@
 			<key>signature</key>
 			<string>Build for Previews Bouli</string>
 			<key>timeStartedRecording</key>
-			<real>773648419.014238</real>
+			<real>773653598.67158604</real>
 			<key>timeStoppedRecording</key>
-			<real>773648427.51589894</real>
+			<real>773653608.56326997</real>
 			<key>title</key>
 			<string>Build for Previews Bouli</string>
 			<key>uniqueIdentifier</key>
-			<string>0438C9B4-0DA4-467E-A164-48089147D9FE</string>
+			<string>2FBF83B0-607A-42FC-A60D-213A884CEEAE</string>
 		</dict>
-		<key>09F4B22F-1801-4659-834A-8285DCCE760F</key>
+		<key>376B2C2E-F1AE-44C1-AD79-D51659E1231F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>09F4B22F-1801-4659-834A-8285DCCE760F.xcactivitylog</string>
+			<string>376B2C2E-F1AE-44C1-AD79-D51659E1231F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -124,349 +124,13 @@
 			<key>signature</key>
 			<string>Build for Previews Bouli</string>
 			<key>timeStartedRecording</key>
-			<real>773649834.900262</real>
+			<real>773654124.52996695</real>
 			<key>timeStoppedRecording</key>
-			<real>773649842.34130299</real>
+			<real>773654134.38518202</real>
 			<key>title</key>
 			<string>Build for Previews Bouli</string>
 			<key>uniqueIdentifier</key>
-			<string>09F4B22F-1801-4659-834A-8285DCCE760F</string>
-		</dict>
-		<key>0C65FE51-8FC5-4EF9-8518-2CF77C03F48A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0C65FE51-8FC5-4EF9-8518-2CF77C03F48A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>4</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773649625.39678299</real>
-			<key>timeStoppedRecording</key>
-			<real>773649627.45495999</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>0C65FE51-8FC5-4EF9-8518-2CF77C03F48A</string>
-		</dict>
-		<key>0E1255B0-630C-4289-B28D-C49803D6738D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>0E1255B0-630C-4289-B28D-C49803D6738D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773590441.45627797</real>
-			<key>timeStoppedRecording</key>
-			<real>773590452.582407</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>0E1255B0-630C-4289-B28D-C49803D6738D</string>
-		</dict>
-		<key>2C6EDD86-F156-4258-AF31-647BE5BF837B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2C6EDD86-F156-4258-AF31-647BE5BF837B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773647871.72165895</real>
-			<key>timeStoppedRecording</key>
-			<real>773647974.53690302</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>2C6EDD86-F156-4258-AF31-647BE5BF837B</string>
-		</dict>
-		<key>4AF60FE9-E2DF-4573-896E-00CA99E16C09</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4AF60FE9-E2DF-4573-896E-00CA99E16C09.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773648640.93582797</real>
-			<key>timeStoppedRecording</key>
-			<real>773648649.38237</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>4AF60FE9-E2DF-4573-896E-00CA99E16C09</string>
-		</dict>
-		<key>50C76A8C-EEC6-4E7F-8596-499A559DC732</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>50C76A8C-EEC6-4E7F-8596-499A559DC732.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773648844.58195198</real>
-			<key>timeStoppedRecording</key>
-			<real>773648865.11713803</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>50C76A8C-EEC6-4E7F-8596-499A559DC732</string>
-		</dict>
-		<key>570A3292-B9FC-4230-8D6A-9EA4B8E039AE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>570A3292-B9FC-4230-8D6A-9EA4B8E039AE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773648829.57199705</real>
-			<key>timeStoppedRecording</key>
-			<real>773648834.19043005</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>570A3292-B9FC-4230-8D6A-9EA4B8E039AE</string>
-		</dict>
-		<key>685697B9-2C6D-4D9A-A40C-E0A80755104B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>685697B9-2C6D-4D9A-A40C-E0A80755104B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>4</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773650325.44929194</real>
-			<key>timeStoppedRecording</key>
-			<real>773650335.20627701</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>685697B9-2C6D-4D9A-A40C-E0A80755104B</string>
-		</dict>
-		<key>6D83ECA5-7A00-4DCB-B899-710DC0A47508</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>6D83ECA5-7A00-4DCB-B899-710DC0A47508.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773649849.24236405</real>
-			<key>timeStoppedRecording</key>
-			<real>773649850.72555494</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>6D83ECA5-7A00-4DCB-B899-710DC0A47508</string>
+			<string>376B2C2E-F1AE-44C1-AD79-D51659E1231F</string>
 		</dict>
 		<key>881BCA9D-715E-42CE-B3E4-E94A84D633FD</key>
 		<dict>
@@ -510,7 +174,7 @@
 			<key>uniqueIdentifier</key>
 			<string>881BCA9D-715E-42CE-B3E4-E94A84D633FD</string>
 		</dict>
-		<key>8A406656-0F16-4462-8018-B93D38451E0E</key>
+		<key>B8C67255-6C0D-4046-BBDC-C4B74C6A07AB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -519,175 +183,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>8A406656-0F16-4462-8018-B93D38451E0E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>6</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773649592.55625296</real>
-			<key>timeStoppedRecording</key>
-			<real>773649598.40660203</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>8A406656-0F16-4462-8018-B93D38451E0E</string>
-		</dict>
-		<key>92EE3E5D-F85F-497B-8187-231D3D00F55C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>92EE3E5D-F85F-497B-8187-231D3D00F55C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773648396.23479402</real>
-			<key>timeStoppedRecording</key>
-			<real>773648403.22517002</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>92EE3E5D-F85F-497B-8187-231D3D00F55C</string>
-		</dict>
-		<key>A3B12604-F8FA-4014-980C-61E6BABBCB0E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A3B12604-F8FA-4014-980C-61E6BABBCB0E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773649546.700091</real>
-			<key>timeStoppedRecording</key>
-			<real>773649550.02156198</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>A3B12604-F8FA-4014-980C-61E6BABBCB0E</string>
-		</dict>
-		<key>B8027384-4FE8-420B-828F-EBEF6D6F02C7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B8027384-4FE8-420B-828F-EBEF6D6F02C7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773649609.34709001</real>
-			<key>timeStoppedRecording</key>
-			<real>773649611.74974799</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>B8027384-4FE8-420B-828F-EBEF6D6F02C7</string>
-		</dict>
-		<key>B887C97E-449C-4E12-9A38-8B0B9421B247</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B887C97E-449C-4E12-9A38-8B0B9421B247.xcactivitylog</string>
+			<string>B8C67255-6C0D-4046-BBDC-C4B74C6A07AB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -712,15 +208,15 @@
 			<key>signature</key>
 			<string>Build for Previews Bouli</string>
 			<key>timeStartedRecording</key>
-			<real>773650102.23962104</real>
+			<real>773653779.28407001</real>
 			<key>timeStoppedRecording</key>
-			<real>773650106.53051996</real>
+			<real>773653785.24495804</real>
 			<key>title</key>
 			<string>Build for Previews Bouli</string>
 			<key>uniqueIdentifier</key>
-			<string>B887C97E-449C-4E12-9A38-8B0B9421B247</string>
+			<string>B8C67255-6C0D-4046-BBDC-C4B74C6A07AB</string>
 		</dict>
-		<key>D79645A8-FEFA-4EC2-A53F-03A8CC0A4326</key>
+		<key>C884039E-158A-4D29-9A85-D17B62FDD6A1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -729,17 +225,17 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D79645A8-FEFA-4EC2-A53F-03A8CC0A4326.xcactivitylog</string>
+			<string>C884039E-158A-4D29-9A85-D17B62FDD6A1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -754,55 +250,13 @@
 			<key>signature</key>
 			<string>Build for Previews Bouli</string>
 			<key>timeStartedRecording</key>
-			<real>773649539.54089296</real>
+			<real>773654131.25086105</real>
 			<key>timeStoppedRecording</key>
-			<real>773649547.26417994</real>
+			<real>773654151.93919599</real>
 			<key>title</key>
 			<string>Build for Previews Bouli</string>
 			<key>uniqueIdentifier</key>
-			<string>D79645A8-FEFA-4EC2-A53F-03A8CC0A4326</string>
-		</dict>
-		<key>E0754FB6-49D2-4DED-954D-11097CC766CE</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E0754FB6-49D2-4DED-954D-11097CC766CE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Bouli project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Bouli</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build for Previews Bouli</string>
-			<key>timeStartedRecording</key>
-			<real>773648821.11918104</real>
-			<key>timeStoppedRecording</key>
-			<real>773648825.625085</real>
-			<key>title</key>
-			<string>Build for Previews Bouli</string>
-			<key>uniqueIdentifier</key>
-			<string>E0754FB6-49D2-4DED-954D-11097CC766CE</string>
+			<string>C884039E-158A-4D29-9A85-D17B62FDD6A1</string>
 		</dict>
 	</dict>
 </dict>

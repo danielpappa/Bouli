@@ -12,19 +12,19 @@
       },
       {
         "comment": "",
-        "key": "Current Orders"
+        "key": "IN CONSEGNA PER OGGI"
       },
       {
         "comment": "",
-        "key": "No current orders."
+        "key": "NESSUN ORDINE EFFETUATO."
       },
       {
         "comment": "",
-        "key": "Delivery in Progress"
+        "key": "IN CONSEGNA..."
       },
       {
         "comment": "",
-        "key": "Estimated Arrival: %@"
+        "key": "ETA: %@"
       },
       {
         "comment": "",
@@ -36,11 +36,11 @@
       },
       {
         "comment": "",
-        "key": "View Order History"
+        "key": "Vedi Ordini Passati"
       },
       {
         "comment": "",
-        "key": "Status: %@"
+        "key": "Stato: %@"
       },
       {
         "comment": "",
@@ -48,7 +48,7 @@
       },
       {
         "comment": "",
-        "key": "Order Details"
+        "key": "Dettagli Ordine"
       },
       {
         "comment": "",
@@ -56,15 +56,15 @@
       },
       {
         "comment": "",
-        "key": "Date"
+        "key": "Data"
       },
       {
         "comment": "",
-        "key": "Total"
+        "key": "Totale"
       },
       {
         "comment": "",
-        "key": "Status"
+        "key": "Stato"
       }
     ]
   },

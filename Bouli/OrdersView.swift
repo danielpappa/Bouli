@@ -20,8 +20,8 @@ struct Order: Identifiable {
 
 struct OrdersView: View {
     let upcomingOrders: [Order] = [
-        Order(date: "Today, 8:30 AM", total: "€25.50", status: "Preparing", items: ["MOIDL"], deliveryLocation: CLLocationCoordinate2D(latitude: 46.497331, longitude: 11.355006), estimatedArrivalTime: "12:45 PM"),
-        Order(date: "Today, 8:30 AM", total: "€25.50", status: "Preparing", items: ["WRAP OF THE WEEK"], deliveryLocation: CLLocationCoordinate2D(latitude: 46.497331, longitude: 11.355006), estimatedArrivalTime: "12:45 PM")
+        Order(date: "Today, 8:30 AM", total: "€25.50", status: "In Preparazione", items: ["MOIDL"], deliveryLocation: CLLocationCoordinate2D(latitude: 46.497331, longitude: 11.355006), estimatedArrivalTime: "12:45 PM"),
+        Order(date: "Today, 8:30 AM", total: "€25.50", status: "In Preparazione", items: ["WRAP OF THE WEEK"], deliveryLocation: CLLocationCoordinate2D(latitude: 46.497331, longitude: 11.355006), estimatedArrivalTime: "12:45 PM")
     ]
     
     // Past orders moved to a separate data source/view
@@ -39,9 +39,9 @@ struct OrdersView: View {
                     if let currentOrder = upcomingOrders.first {
                         Section {
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("Delivery in Progress")
+                                Text("IN CONSEGNA...")
                                     .font(.headline)
-                                    .foregroundColor(.orange)
+                                    .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
                                 
                                 Map(initialPosition: .region(MKCoordinateRegion(center: currentOrder.deliveryLocation ?? CLLocationCoordinate2D(latitude: 45.4642, longitude: 9.1900), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)))) {
                                     if let location = currentOrder.deliveryLocation {
@@ -52,7 +52,7 @@ struct OrdersView: View {
                                 .cornerRadius(10)
                                 
                                 if let eta = currentOrder.estimatedArrivalTime {
-                                    Text("Estimated Arrival: \(eta)")
+                                    Text("ETA: \(eta)")
                                         .font(.subheadline)
                                         .fontWeight(.medium)
                                 }
@@ -61,7 +61,7 @@ struct OrdersView: View {
                     }
                     
                     if !upcomingOrders.isEmpty {
-                        Section(header: Text("Current Orders").font(.headline)) {
+                        Section(header: Text("IN CONSEGNA PER OGGI").font(.headline)) {
                             ForEach(upcomingOrders) { order in
                                 NavigationLink(destination: OrderDetailView(order: order)) {
                                     CurrentOrderRow(order: order) // Using a new row type for current orders
@@ -69,14 +69,14 @@ struct OrdersView: View {
                             }
                         }
                     } else {
-                        Text("No current orders.")
+                        Text("NESSUN ORDINE EFFETUATO.")
                             .foregroundColor(.gray)
                             .padding()
                     }
                     
                     Section {
                         NavigationLink(destination: Text("Order History View")) {
-                            Label("View Order History", systemImage: "clock.arrow.circlepath")
+                            Label("Vedi Ordini Passati", systemImage: "clock.arrow.circlepath")
                                 .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
                         }
                     }
@@ -102,9 +102,9 @@ struct CurrentOrderRow: View {
             Text(order.items.joined(separator: ", "))
                 .font(.headline)
                 .fontWeight(.bold)
-            Text("Status: \(order.status)")
+            Text("Stato: \(order.status)")
                 .font(.subheadline)
-                .foregroundColor(order.status == "Delivered" ? .green : .orange)
+                .foregroundColor(order.status == "Consegnato" ? Color(red: 102/255, green: 127/255, blue: 54/255) : .orange)
         }
         .padding(.vertical, 5)
     }
@@ -116,32 +116,32 @@ struct OrderDetailView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Order Details").font(.headline)) {
+            Section(header: Text("Dettagli Ordine").font(.headline)) {
                 HStack {
-                    Text("Date")
+                    Text("Data")
                     Spacer()
                     Text(order.date)
                 }
                 HStack {
-                    Text("Total")
+                    Text("Totale")
                     Spacer()
                     Text(order.total)
                 }
                 HStack {
-                    Text("Status")
+                    Text("Stato")
                     Spacer()
                     Text(order.status)
-                        .foregroundColor(order.status == "Delivered" ? .green : .orange)
+                        .foregroundColor(order.status == "Consegnato" ? .green : .orange)
                 }
             }
             
-            Section(header: Text("Items").font(.headline)) {
+            Section(header: Text("Articoli").font(.headline)) {
                 ForEach(order.items, id: \.self) { item in
                     Text(item)
                 }
             }
         }
-        .navigationTitle("Order #\(String(order.id.uuidString.prefix(4)))")
+        .navigationTitle("Ordine #\(String(order.id.uuidString.prefix(4)))")
         .navigationBarTitleDisplayMode(.inline)
         .scrollContentBackground(.hidden)
         .background(Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.3))

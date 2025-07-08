@@ -4,31 +4,31 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Order #%@"
+        "key": "Ordine #%@"
       },
       {
         "comment": "",
-        "key": "Order Details"
+        "key": "Dettagli Ordine"
       },
       {
         "comment": "",
-        "key": "Items"
+        "key": "Articoli"
       },
       {
         "comment": "",
-        "key": "Date"
+        "key": "Data"
       },
       {
         "comment": "",
-        "key": "Total"
+        "key": "Totale"
       },
       {
         "comment": "",
-        "key": "Status"
+        "key": "Stato"
       },
       {
         "comment": "",
-        "key": "Status: %@"
+        "key": "Stato: %@"
       },
       {
         "comment": "",
@@ -40,19 +40,19 @@
       },
       {
         "comment": "",
-        "key": "Current Orders"
+        "key": "IN CONSEGNA PER OGGI"
       },
       {
         "comment": "",
-        "key": "No current orders."
+        "key": "NESSUN ORDINE EFFETUATO."
       },
       {
         "comment": "",
-        "key": "Estimated Arrival: %@"
+        "key": "ETA: %@"
       },
       {
         "comment": "",
-        "key": "Delivery in Progress"
+        "key": "IN CONSEGNA..."
       },
       {
         "comment": "",
@@ -64,7 +64,7 @@
       },
       {
         "comment": "",
-        "key": "View Order History"
+        "key": "Vedi Ordini Passati"
       }
     ]
   },

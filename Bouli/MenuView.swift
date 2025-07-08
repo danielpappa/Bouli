@@ -257,6 +257,7 @@ struct MenuItemView: View {
                         Image(item.imageName)
                             .resizable()
                             .scaledToFit()
+                            .padding(.top)
                 }
                 .sheet(isPresented: $showingOrderDetails) {
                     PopUpOrderView(

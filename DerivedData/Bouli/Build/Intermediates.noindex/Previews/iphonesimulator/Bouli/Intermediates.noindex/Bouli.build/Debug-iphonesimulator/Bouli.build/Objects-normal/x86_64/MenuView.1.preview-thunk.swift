@@ -10,7 +10,7 @@ import SwiftUI
 
 extension PopUpOrderView {
     @_dynamicReplacement(for: parsePriceString(_:)) private func __preview__parsePriceString(_ priceString: String) -> Double {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 374)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 375)
         let cleanedString = priceString.replacingOccurrences(of: __designTimeString("#73.[6].[8].[0].value.modifier[0].arg[0].value", fallback: "€"), with: __designTimeString("#73.[6].[8].[0].value.modifier[0].arg[1].value", fallback: "")).trimmingCharacters(in: .whitespacesAndNewlines)
         return Double(cleanedString) ?? __designTimeFloat("#73.[6].[8].[1].[0]", fallback: 0.0)
     
@@ -20,7 +20,7 @@ extension PopUpOrderView {
 
 extension PopUpOrderView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 314)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 315)
         NavigationView {
             VStack(spacing: __designTimeInteger("#73.[6].[7].property.[0].[0].arg[0].value.[0].arg[0].value", fallback: 15)) {
                 
@@ -85,7 +85,7 @@ extension PopUpOrderView {
 
 extension PopUpOrderView {
     @_dynamicReplacement(for: totalCost) private var __preview__totalCost: Double {
-        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 310)
+        #sourceLocation(file: "/Users/pappalardodaniel/Desktop/Bouli/Bouli/Bouli/MenuView.swift", line: 311)
         return basePrice * Double(amount)
     
 #sourceLocation()
@@ -154,6 +154,7 @@ extension MenuItemView {
                         Image(item.imageName)
                             .resizable()
                             .scaledToFit()
+                            .padding(.top)
                 }
                 .sheet(isPresented: $showingOrderDetails) {
                     PopUpOrderView(
