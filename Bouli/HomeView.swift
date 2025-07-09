@@ -21,95 +21,115 @@ struct HomeView: View {
         GridItem(.flexible(), spacing: 16)
     ]
     
+    @State private var showingDetailPopup = false
+    @State private var selectedHowItWorksSection: HowItWorks?
+    
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                Text("bouli")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .shadow(radius: 5)
-                CarouselImageView()
-                    .padding()
-                
-                VStack(spacing: 20) {
-                    Text("COME FUNZIONA")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                    LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(sections) { section in
-                            HowItWorksView(section: section)
-                        }
-                    }
-                    .padding(.horizontal)
-                    .padding(.bottom, 20)
-                }
-                .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
-                .safeAreaPadding(.bottom)
-                .safeAreaPadding(.top)
-                
-                VStack(spacing: 20) {
-                    Text("LE NOSTRE BOWL")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                    OverviewCarouselView()
-                }
-                .background(Color.white)
-                .safeAreaPadding(.top)
-                .safeAreaPadding(.bottom)
-                
-                VStack(spacing: 20) {
-                    Text("PICK UP")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
-                        .padding(.top)
-                    
-                    ZStack(alignment: .bottomLeading) {
-                        Image("pickup")
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
-                        LinearGradient(
-                                    gradient: Gradient(colors: [
-                                        .black.opacity(0.8),
-                                        .black.opacity(0.0)
-                                    ]),
-                                    startPoint: .bottom,
-                                    endPoint: .top
-                                )
-                        VStack() {
-                            Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding(.horizontal)
-                            Text("Ordina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
-                                .font(.caption)
-                                .foregroundColor(Color.white)
-                                .padding()
-                        }
-                    }
-                    .cornerRadius(20)
-                    .padding(.horizontal)
-                }
-                .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
-            }
-            .safeAreaPadding(.top)
-            .safeAreaPadding(.bottom)
-        }
-        .background(
-            GeometryReader { geometry in
+        ZStack {
+            ScrollView {
                 VStack(spacing: 0) {
-                    Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.9)
-                        .frame(height: geometry.size.height * 0.6)
-                    Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0)
-                        .frame(height: geometry.size.height * 0.6)
+                    Text("bouli")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .shadow(radius: 5)
+                    CarouselImageView()
+                        .padding()
+                    
+                    VStack(spacing: 20) {
+                        Text("COME FUNZIONA")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        LazyVGrid(columns: columns, spacing: 16) {
+                            ForEach(sections) { section in
+                                HowItWorksView(section: section)
+                                    .onTapGesture {
+                                        selectedHowItWorksSection = section
+                                        withAnimation(.easeInOut) {
+                                            showingDetailPopup = true
+                                        }
+                                    }
+                            }
+                        }
+                        .padding(.horizontal)
+                        .padding(.bottom, 20)
+                        
+                    }
+                    .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
+                    .safeAreaPadding(.bottom)
+                    .safeAreaPadding(.top)
+                    
+                    VStack(spacing: 20) {
+                        Text("LE NOSTRE BOWL")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                        OverviewCarouselView()
+                    }
+                    .background(Color.white)
+                    .safeAreaPadding(.top)
+                    .safeAreaPadding(.bottom)
+                    
+                    VStack(spacing: 20) {
+                        Text("PICK UP")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+                            .padding(.top)
+                        
+                        ZStack(alignment: .bottomLeading) {
+                            Image("pickup")
+                                .resizable()
+                                .scaledToFill()
+                                .clipped()
+                            LinearGradient(
+                                gradient: Gradient(colors: [
+                                    .black.opacity(0.8),
+                                    .black.opacity(0.0)
+                                ]),
+                                startPoint: .bottom,
+                                endPoint: .top
+                            )
+                            VStack() {
+                                Text("Seleziona il punto di ritiro, il pasto, la confezione e la dimensione della porzione desiderata")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal)
+                                Text("Ordina tramite WhatsApp entro le 9:00, prendilo e... divertiti !")
+                                    .font(.caption)
+                                    .foregroundColor(Color.white)
+                                    .padding()
+                            }
+                        }
+                        .cornerRadius(20)
+                        .padding(.horizontal)
+                    }
+                    .background(Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0))
                 }
-                .edgesIgnoringSafeArea(.all)
+                .safeAreaPadding(.top)
+                .safeAreaPadding(.bottom)
             }
-        )
+            .background(
+                GeometryReader { geometry in
+                    VStack(spacing: 0) {
+                        Color(red: 102/255, green: 127/255, blue: 54/255, opacity: 0.9)
+                            .frame(height: geometry.size.height * 0.6)
+                        Color(red: 246/255.0, green: 235/255.0, blue: 242/255.0)
+                            .frame(height: geometry.size.height * 0.6)
+                    }
+                    .edgesIgnoringSafeArea(.all)
+                }
+            )
+            if showingDetailPopup {
+                DetailPopupView(
+                    isPresented: $showingDetailPopup,
+                    allSections: sections, // Pass all sections for horizontal scrolling
+                    currentSection: $selectedHowItWorksSection // Binding for the current view
+                )
+                .transition(.opacity.combined(with: .scale)) // Smooth transition
+            }
+        }
     }
 }
 
@@ -164,7 +184,7 @@ struct CarouselImageView: View {
     }
 }
 
-struct HowItWorks: Identifiable {
+struct HowItWorks: Identifiable, Equatable, Hashable {
     let id = UUID()
     let imageName: String
     let title: String
@@ -196,6 +216,86 @@ struct HowItWorksView: View {
         .aspectRatio(1, contentMode: .fit)
     }
 }
+
+struct DetailPopupView: View {
+    @Binding var isPresented: Bool
+    let allSections: [HowItWorks] // All sections for TabView
+    @Binding var currentSection: HowItWorks? // The section currently displayed in the TabView
+
+    var body: some View {
+        // Use GeometryReader to size the popup relative to the screen
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+                // Dimmed background
+                Color.black.opacity(0.4)
+                    .edgesIgnoringSafeArea(.all)
+                    .onTapGesture { // Dismiss popup when tapping outside
+                        withAnimation {
+                            isPresented = false
+                            currentSection = nil // Clear selection on dismiss
+                        }
+                    }
+
+                VStack(spacing: 0) { // Main content of the popup
+                    // Close button
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            withAnimation {
+                                isPresented = false
+                                currentSection = nil
+                            }
+                        }) {
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.title2)
+                                .foregroundColor(.gray)
+                                .padding(10)
+                        }
+                    }
+
+                    // TabView for horizontal swiping
+                    TabView(selection: $currentSection) {
+                        ForEach(allSections) { section in
+                            ScrollView { // Allow content within the page to scroll vertically if needed
+                                VStack(alignment: .center, spacing: 20) {
+                                    Image(section.imageName)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 100)
+                                        .padding(.top, 20)
+
+                                    Text(section.title)
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color(red: 102/255, green: 127/255, blue: 54/255))
+
+                                    Text(section.description)
+                                        .font(.body)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(.gray)
+                                        .fixedSize(horizontal: false, vertical: true) // Allow full text wrapping
+
+                                    Spacer()
+                                }
+                                .padding()
+                                .frame(maxWidth: .infinity) // Ensures content fills available width
+                            }
+                            .tag(section as HowItWorks?)
+                        }
+                    }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) // Show pagination dots
+                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                }
+                .frame(width: geometry.size.width * 0.9, height: geometry.size.height * 0.8) // Popup size
+                .background(Color.white)
+                .cornerRadius(20)
+                .shadow(radius: 15)
+            }
+        }
+    }
+}
+
 
 struct Overview: Identifiable {
     let id = UUID()
